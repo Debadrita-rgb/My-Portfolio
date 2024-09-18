@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>PERSONAL PORTFOLIO </title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    </head>
+    <body>
+        <!--body-->
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello,It's Me</h3>
+                <h1>Debadrita</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <div class="social-media">
+                    <a target="_blank" href="https://github.com/Debadrita-rgb"><i class='bx bxl-github'></i></a>
+                    <!-- <a href="#"><i class='bx bxs-envelope'></i></a> -->
+                    <!-- <a href="#"><i class='bx bxl-instagram' ></i></a> -->
+                    <a href="https://www.linkedin.com/in/debadrita-paul-9001b7126/"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <a target="_blank" href="{% static 'assets/current_resume.docx' %}" class="btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="{% static 'assets/images/computer_engineer-compare-page.png' %}" alt="">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="{% static 'assets/images/about.jpg' %}" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About<span>Me</span></h2>
+                <h3>Full Stack Developer</h3>
+                <p>Full Stack Developer proficient in developing dynamic and responsive web applications. Expertise in both front-end and back-end technologies with a solid understanding of the full development lifecycle. Adept at collaborating with cross-functional teams to deliver high-quality, scalable solutions that meet client requirements.</p>
+                 <!-- <a href="#"class="btn">Read More</a>    -->
+            </div>
+        </section>
+        <section class="services"id="services">
+            <h2 class="heading">Our<span>Services</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p>Motivated designer and developer
+                         with experience creating custom websites through Python and CSS. 
+                         Strong collaboration skills and proven history of application development.HTML and JavaScript and MySQL.</p>
+                    <!-- <a href="#"class="btn">Read More</a> -->
+                </div>
+        
+                <div class="services-box">
+                    <i class='bx bxl-python'></i>
+                    <h3>Python</h3>
+                    <p>Python is a versatile, high-level programming language known for its readability, simplicity, and wide use in web development, data science.</p>
+                    <!-- <a href="#"class="btn">Read More</a> -->
+                </div>
+            
+                <div class="services-box">
+                    <i class='bx bxl-django'></i>
+                    <h3>Django </h3>
+                    <p>Django is a high-level Python web framework that simplifies web development by providing built-in tools for handling databases, authentication, and URL routing, enabling rapid, secure, and scalable web application creation.
+                        </p>
+                    <!-- <a href="#"class="btn">Read More</a> -->
+                </div>
+            </div>
+        </section>
+        <section class="portfolio"id="portfolio">
+            <h2 class="heading">Latest<span>Project</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="{% static 'assets/images/homedecor.png' %}"alt="">
+                    <div class="portfolio-layer">
+                        <h4>Dynamics Ecommerce Site For Home decor using Django</h4>                        
+                        <p>This website provided functionalities for guest user to login,also register themselves.This website will give user details about products which user can add in their cart when they are registered and also they can remove it.User can easily pay through razorpay,whose details will be emailed to the user and these orders can be viewed in user order history</p>
+                        <a href="https://github.com/Debadrita-rgb/Home-decor.git"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="{% static 'assets/images/portfolio.png' %}"alt="">
+                    <div class="portfolio-layer">
+                        <h4>Personal Portfolio</h4>
+                        <p>In this project I try making my own portfolio website for myself. Showcase my projects, my social media handles, my experience on the website.</p>
+                        <a href="https://github.com/Debadrita-rgb/My-Portfolio.git"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="{% static 'assets/images/tour.png' %}"alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Application for Tour and Travels Using HTML,CSS, Bootstrap</h4>
+                        <p>Designed and deployed this tour and travel website using HTML,CSS Bootstrap which will give users a picturesque detail of tourist places in India.User can easily get details of particular tourist place with proper day to day tour plan and send in enquiry through contact details provided. 
+                            </p>
+                        <a href="https://github.com/Debadrita-rgb/HTML-Project"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <!-- <div class="portfolio-box">
+                    <img src="{% static 'assets/images/kevin-canlas-QYHehJ9Iovs-unsplash.jpg' %}"alt="">
+                    <div class="portfolio-layer">
+                        <h4>trafic analysis </h4>
+                        <p>In this project I try analysis the traffic by using java.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section class="contact"id="contact">
+            <h2 class="heading">Contact<span>ME!</span></h2>
+
+            <form method="post" action="" name="submit-to-google-sheet">
+                {% csrf_token %} 
+                <div class="input-box">
+                    <input type="text" name="uname" id="uname" placeholder="Full Name">
+                    <input type="email" name="umail" id="umail" placeholder="Email Address">
+                </div>
+                <!-- <div class="input-box "> -->
+                    <textarea name="subject" placeholder="Subject" id="subject"></textarea>
+                <!-- </div> -->
+                <textarea name="message" id="message" cols="30" rows="10"placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message"class="btn" onclick="sendEmail()">
+            </form>
+            
+            <span id="msg"></span>
+            
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Debadrita | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "debadritapaul76@gmail.com",
+                Password: "vgtuivjbzirejlcz",
+                To: 'debadritapaul76@gmail.com',
+                From: document.getElementById('umail'),
+                Name: document.getElementById('uname'),
+                Subject: document.getElementById('subject'),
+                Body: document.getElementById('message'),
+            })
+          
+            
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    document.getElementById("msg").style.fontWeight = "bold";
+                    document.getElementById("msg").style.textAlign = "center";
+                    document.getElementById("msg").style.fontSize = "30px";
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                
+        }
+          </script> 
+    </body>
+</html>
